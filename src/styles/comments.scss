@@ -1,0 +1,39 @@
+.comments-div {
+  display: flex;
+  border-bottom: 1px dotted rgba(100, 100, 100, 0.3);
+  padding: 20px 0px;
+  .user-image {
+    padding: 0px 10px;
+    h3 {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  .comment-body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .comment-head {
+      display: flex;
+      justify-content: space-between;
+      padding: 0px 10px;
+      p:last-child{
+        margin: 0px;
+        font-size: 20px;
+      }
+    }
+    .comment-text{
+        padding: 0px 10px;
+    }
+    .comment-footer{
+        display: flex;
+        padding: 0px 10px;
+        justify-content: space-between;
+    }
+  }
+}

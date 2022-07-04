@@ -1,0 +1,151 @@
+.main-div {
+  display: flex;
+  margin: auto;
+  border: 1px dotted;
+  border-color: rgba(110, 110, 110, 0.5);
+  .avatar {
+    position: relative;
+    p {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      // background-color: darkgoldenrod;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  .post {
+    padding: 0px 15px;
+    .head-tittle {
+      display: flex;
+      justify-content: space-between;
+      button {
+        width: 40px;
+        height: 40px;
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+        background-color: transparent;
+        font-size: 20px;
+        padding-bottom: 10px;
+      }
+      button:hover {
+        color: blue;
+        background-color: rgb(229, 229, 238);
+      }
+    }
+    .img-div {
+      img {
+        border-radius: 15px;
+        border: 1px dotted;
+        border-color: rgba(110, 110, 110, 0.5);
+      }
+    }
+    .comment-div {
+      display: flex;
+      justify-content: space-between;
+      padding-right: 20px;
+      p {
+        cursor: pointer;
+      }
+      .comment-p:hover {
+        color: blue;
+      }
+      .tweet-p:hover {
+        color: green;
+      }
+      .like-p:hover {
+        color: red;
+      }
+      .share-p:hover {
+        color: blue;
+      }
+    }
+  }
+}
+.main-div:hover {
+  background-color: rgba(223, 216, 207, 0.3);
+}
+
+.contextMenu {
+  background-color: rgb(230, 230, 230);
+  min-width: 150px;
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border: 1px dotted black;
+  button {
+    border: none;
+    border-bottom: 1px solid black;
+  }
+
+}
+.fix-flex {
+  display: flex;
+  .side-bar-container {
+width: 100%;
+    margin-right: 200px;
+  
+  }
+}
+.comment-section {
+  border: 1px dotted rgba(100, 100, 100, 0.3);
+  margin-top: 20px;
+  max-width: 674px;
+  background-color: white;
+}
+
+
+
+#twitter-main-div {
+  .arrow-back {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 10px;
+    left: 50px;
+    .arrow {
+      font-size: 30px;
+    }
+  }
+  .arrow-back:hover {
+    background-color: rgba(235, 201, 157, 0.5);
+  }
+}
+.all-posts {
+  background-color: white;
+}
+
+.sidebar {
+  border-right: 1px solid var(--twitter-background);
+  flex: 0.3;
+  min-width: 250px;
+  margin-left: 20px;
+  margin-right: 0px;
+}
+
+.sidebar__twitterIcon {
+  color: var(--twitter-color);
+  font-size: 30px !important;
+  margin: 10px 20px;
+  margin-bottom: 20px;
+}
+
+.sidebar__tweet {
+  background-color: var(--twitter-color) !important;
+  border: none !important;
+  color: white !important;
+  font-weight: 900 !important;
+  text-transform: inherit !important;
+  border-radius: 30px !important;
+  height: 50px !important;
+  margin-top: 20px !important;
+  width: 90% !important;
+}
